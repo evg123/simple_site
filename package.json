@@ -1,0 +1,11 @@
+{
+  "name": "simple_site",
+  "version": "0.1",
+  "description": "Sample Homepage",
+  "scripts": {
+    "start": "harp server src/ --port $PORT"
+  },
+  "dependencies": {
+    "harp": "*"
+  }
+}
