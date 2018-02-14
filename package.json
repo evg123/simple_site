@@ -1,0 +1,11 @@
+{
+  "name": "simple_site",
+  "version": "0.1",
+  "description": "CS 5850 Game Design - Homepage",
+  "scripts": {
+    "start": "harp server src/ --port $PORT"
+  },
+  "dependencies": {
+    "harp": "*"
+  }
+}
