@@ -1,0 +1,21 @@
+.evg-background {
+  background: url('https://image.ibb.co/kJnKXw/IMG_20161019_133217.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.evg-link {
+  font-size: 26px;
+}
+
+.evg-link-container {
+  padding: 20px;
+}
+
+.evg-button {
+  padding: 20px;
+  margin-bottom: 22px;
+}
+
