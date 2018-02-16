@@ -10,6 +10,10 @@
   font-size: 26px;
 }
 
+.evg-link-sm {
+  font-size: 20px;
+}
+
 .evg-link-container {
   padding: 20px;
 }
@@ -19,3 +23,7 @@
   margin-bottom: 22px;
 }
 
+.evg-paragraph {
+  white-space: normal;
+  margin-bottom: 5px;
+}

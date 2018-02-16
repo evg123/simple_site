@@ -7,7 +7,7 @@
   <meta name="viewport" content="initial-scale=1.25, user-scalable=no">
 
   <meta charset="UTF-8">
-  <title>Eric's Homepage</title>
+  <title>Breakout!</title>
 
   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet"/>
 
@@ -24,36 +24,61 @@
     <p class="lead">A 2D classic re-implemented by Eric VandeGriek</p>
   </div>
 
-    <div class="">
-    <a href="./demo.html" class="btn btn-block btn-default evg-button evg-link">
-      Demo
-    </a>
-  </div>
-  
-  <div class="">
+  <div class="btn-group-justified evg-button">    
     <a href="https://github.com/Spring18GameEngine/assignment-1-breakout-evg/blob/master/part3/README.md"
-       class="btn btn-block btn-default evg-button evg-link">
+       class="btn btn-default evg-link-sm evg-button">
       Download OSX Binary
     </a>
-  </div>
-  
-  <div class="">
     <a href="https://github.com/Spring18GameEngine/assignment-1-breakout-evg"
-       class="btn btn-block btn-default evg-button evg-link">
+       class="btn btn-default evg-link-sm">
       Source on Github
     </a>
-  </div>
-  
-  <div class="">
-    <a href="./docs/index.html" class="btn btn-block btn-default evg-button evg-link">
+    <a href="./docs/index.html"
+       class="btn btn-default evg-link-sm">
       Documentation
     </a>
   </div>
-  
-  <div class="">
-    <a href="./post-mortem.html" class="btn btn-block btn-default evg-button evg-link">
-      Post Mortem
-    </a>
+
+  <div class="btn btn-block btn-default evg-button evg-link">
+    <div class="embed-responsive embed-responsive-16by9">
+      <img class="embed-responsive-item" src="./images/screenshot1.png"\>
+    </div>
+  </div>
+
+  <div class="btn btn-block btn-default evg-button evg-link-sm">
+    <div class="embed-responsive embed-responsive-16by9">
+      <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/0xBJwrm9C8w" allowfullscreen></iframe>
+    </div>
+  </div>
+
+  <div class="btn btn-block btn-default evg-button evg-link">
+    <div class="embed-responsive embed-responsive-16by9">
+      <img class="embed-responsive-item" src="./images/screenshot2.png"\>
+    </div>
+  </div>
+
+  <div class="btn btn-block btn-default evg-button evg-link">
+    <div class="embed-responsive embed-responsive-16by9">
+      <img class="embed-responsive-item" src="./images/screenshot3.png"\>
+    </div>
+  </div>
+
+  <div class="btn btn-block btn-default evg-button evg-link">
+      <p class="h3 lead">
+        Port Mortem
+      </p>
+      <p class="evg-paragraph h5 text-left">
+        I'm happy with what I accomplished on Breakout during the allocated time, but there are a number of things that could be improved.
+      </p>
+      <p class="evg-paragraph h5 text-left">
+        If I had an extra eight weeks to work on this project and get it ready for release the first order of business would be adding proper resolution support. Currently the game is hardcoded to 720p and doesn’t support resizing the window. In order for this to work I would need to decouple the placement of bricks from the resolution of the window so that a level config file would look the same with any window size and shape.
+      </p>
+      <p class="evg-paragraph h5 text-left">
+        Another improvement to get this game release-ready is improving the build system and adding support for other OSes. The current build script is very fragile and I haven’t tested it at all on platforms other than OSX. I would look into other build system technologies, but just a proper makefile would be a big improvement.
+      </p>
+      <p class="evg-paragraph h5 text-left">
+        After that I would focus on improving the level config file format, which is currently pretty bare-bones. It allows the placement of bricks and balls where ever you want, but lacks the ability to specify different sizes or colors for individual blocks. It is also not a very user-friendly format. The addition of a simple GUI system for generating level config files would make level creation much easier. It wouldn't have to be too complicated to give users a lot of freedom. A way to add new blocks and drag them around, and the ability to select individual blocks and set their properties (color, size, movement direction) would be enough.
+      </p>
   </div>
 
 </div>
