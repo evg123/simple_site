@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['paddle',['Paddle',['../class_paddle.html',1,'']]]
+  ['levelconfig',['LevelConfig',['../struct_level_config.html',1,'']]]
 ];

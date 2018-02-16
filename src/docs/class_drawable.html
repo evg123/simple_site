@@ -118,8 +118,10 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>render</b> (S
 <tr class="separator:a69306989be5b490f9a8276809ff9f8e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6bc6528417f090c8b4fdcf61e0c9d724"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_drawable.html#a6bc6528417f090c8b4fdcf61e0c9d724">destroy</a> ()</td></tr>
 <tr class="separator:a6bc6528417f090c8b4fdcf61e0c9d724"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adc18b871640cfe7a08f77af90a3f916d"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_drawable.html#adc18b871640cfe7a08f77af90a3f916d">checkCollision</a> (<a class="el" href="class_drawable.html">Drawable</a> *other)</td></tr>
-<tr class="separator:adc18b871640cfe7a08f77af90a3f916d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a789b56f2bec5cd8095e159041c8e7a2d"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_drawable.html#a789b56f2bec5cd8095e159041c8e7a2d">checkCollision</a> (<a class="el" href="class_drawable.html">Drawable</a> *other)</td></tr>
+<tr class="separator:a789b56f2bec5cd8095e159041c8e7a2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad86dc5820dcd379385d1f75d1595df1c"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_drawable.html#ad86dc5820dcd379385d1f75d1595df1c">processCollision</a> (<a class="el" href="class_drawable.html">Drawable</a> *other)</td></tr>
+<tr class="separator:ad86dc5820dcd379385d1f75d1595df1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a78d01cb3e1050166f64b36aac040df23"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_drawable.html#a78d01cb3e1050166f64b36aac040df23">reflectX</a> ()</td></tr>
 <tr class="separator:a78d01cb3e1050166f64b36aac040df23"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a147ee415f62f35a47099c52dd50810f1"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_drawable.html#a147ee415f62f35a47099c52dd50810f1">reflectY</a> ()</td></tr>
@@ -131,8 +133,6 @@ Protected Member Functions</h2></td></tr>
 <tr class="separator:a525a1b02625d73beeaf815dfad1f5641"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adf56e2ece39e6cac25ca85c79a147b86"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_drawable.html#adf56e2ece39e6cac25ca85c79a147b86">bounceOff</a> (<a class="el" href="class_drawable.html">Drawable</a> *other)</td></tr>
 <tr class="separator:adf56e2ece39e6cac25ca85c79a147b86"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad86dc5820dcd379385d1f75d1595df1c"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_drawable.html#ad86dc5820dcd379385d1f75d1595df1c">processCollision</a> (<a class="el" href="class_drawable.html">Drawable</a> *other)</td></tr>
-<tr class="separator:ad86dc5820dcd379385d1f75d1595df1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
@@ -298,8 +298,8 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>score_on_destruction</
 
 </div>
 </div>
-<a id="adc18b871640cfe7a08f77af90a3f916d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adc18b871640cfe7a08f77af90a3f916d">&#9670;&nbsp;</a></span>checkCollision()</h2>
+<a id="a789b56f2bec5cd8095e159041c8e7a2d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a789b56f2bec5cd8095e159041c8e7a2d">&#9670;&nbsp;</a></span>checkCollision()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -308,7 +308,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>score_on_destruction</
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void Drawable::checkCollision </td>
+          <td class="memname">bool Drawable::checkCollision </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="class_drawable.html">Drawable</a> *&#160;</td>
           <td class="paramname"><em>other</em></td><td>)</td>
@@ -529,7 +529,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>score_on_destruction</
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
