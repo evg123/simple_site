@@ -16,7 +16,7 @@
   <meta name="viewport" content="initial-scale=1.25, user-scalable=no">
 
   <meta charset="UTF-8">
-  <title>Breakout!</title>
+  <title>Hopman</title>
 
   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet"/>
 
@@ -29,20 +29,20 @@
 
 <div class="container evg-link-container">
   <div class="jumbotron">
-    <h1>Breakout!</h1>
-    <p class="lead">A 2D classic re-implemented by Eric VandeGriek</p>
+    <h1>Hopman</h1>
+    <p class="lead">A 2D platformer by Eric VandeGriek</p>
   </div>
 
   <div class="btn-group-justified evg-button">    
-    <a href="https://github.com/Spring18GameEngine/assignment-1-breakout-evg/releases/download/bko_1.0/breakout.tar.gz"
+    <a href="https://github.com/Spring18GameEngine/assignment-2-platformer-evg2/releases/download/hopman_1.0/hopman.tar.gz"
        class="btn btn-default evg-link-sm evg-button">
       Download OSX Binary
     </a>
-    <a href="https://github.com/Spring18GameEngine/assignment-1-breakout-evg"
+    <a href="https://github.com/Spring18GameEngine/assignment-2-platformer-evg2"
        class="btn btn-default evg-link-sm">
       Source on Github
     </a>
-    <a href="./docs/breakout/index.html"
+    <a href="./docs/platformer/index.html"
        class="btn btn-default evg-link-sm">
       Documentation
     </a>
@@ -50,7 +50,7 @@
 
   <div class="btn btn-block btn-default evg-button evg-link">
     <div class="embed-responsive embed-responsive-16by9">
-      <img class="embed-responsive-item" src="./images/screenshot1.png"\>
+      <img class="embed-responsive-item" src="./images/platformer/screenshot1.png"\>
     </div>
   </div>
 
@@ -62,13 +62,13 @@
 
   <div class="btn btn-block btn-default evg-button evg-link">
     <div class="embed-responsive embed-responsive-16by9">
-      <img class="embed-responsive-item" src="./images/screenshot2.png"\>
+      <img class="embed-responsive-item" src="./images/platformer/screenshot2.png"\>
     </div>
   </div>
 
   <div class="btn btn-block btn-default evg-button evg-link">
     <div class="embed-responsive embed-responsive-16by9">
-      <img class="embed-responsive-item" src="./images/screenshot3.png"\>
+      <img class="embed-responsive-item" src="./images/platformer/screenshot3.png"\>
     </div>
   </div>
 
@@ -77,16 +77,12 @@
         Post Mortem
       </p>
       <p class="evg-paragraph h5 text-left">
-        I'm happy with what I accomplished on Breakout during the allocated time, but there are a number of things that could be improved.
       </p>
       <p class="evg-paragraph h5 text-left">
-        If I had an extra eight weeks to work on this project and get it ready for release the first order of business would be adding proper resolution support. Currently the game is hardcoded to 720p and doesn’t support resizing the window. In order for this to work I would need to decouple the placement of bricks from the resolution of the window so that a level config file would look the same with any window size and shape.
       </p>
       <p class="evg-paragraph h5 text-left">
-        Another improvement to get this game release-ready is improving the build system and adding support for other OSes. The current build script is very fragile and I haven’t tested it at all on platforms other than OSX. I would look into other build system technologies, but just a proper makefile would be a big improvement.
       </p>
       <p class="evg-paragraph h5 text-left">
-        After that I would focus on improving the level config file format, which is currently pretty bare-bones. It allows the placement of bricks and balls where ever you want, but lacks the ability to specify different sizes or colors for individual blocks. It is also not a very user-friendly format. The addition of a simple GUI system for generating level config files would make level creation much easier. It wouldn't have to be too complicated to give users a lot of freedom. A way to add new blocks and drag them around, and the ability to select individual blocks and set their properties (color, size, movement direction) would be enough.
       </p>
   </div>
 
