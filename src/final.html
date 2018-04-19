@@ -16,7 +16,7 @@
   <meta name="viewport" content="initial-scale=1.25, user-scalable=no">
 
   <meta charset="UTF-8">
-  <title>Hopman</title>
+  <title>Hopman Multiplayer</title>
 
   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet"/>
 
@@ -50,25 +50,25 @@
 
   <div class="btn btn-block btn-default evg-button evg-link">
     <div class="embed-responsive embed-responsive-16by9">
-      <img class="embed-responsive-item" src="./images/platformer/img1.png"\>
+      <img class="embed-responsive-item" src="./images/final/img1.png"\>
     </div>
   </div>
 
   <div class="btn btn-block btn-default evg-button evg-link-sm">
     <div class="embed-responsive embed-responsive-16by9">
-      <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/U7BMCqVaJ4s" allowfullscreen></iframe>
+      <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/X2uWwe0J-KM" allowfullscreen></iframe>
     </div>
   </div>
 
   <div class="btn btn-block btn-default evg-button evg-link">
     <div class="embed-responsive embed-responsive-16by9">
-      <img class="embed-responsive-item" src="./images/platformer/img2.png"\>
+      <img class="embed-responsive-item" src="./images/final/img2.png"\>
     </div>
   </div>
 
   <div class="btn btn-block btn-default evg-button evg-link">
     <div class="embed-responsive embed-responsive-16by9">
-      <img class="embed-responsive-item" src="./images/platformer/img3.png"\>
+      <img class="embed-responsive-item" src="./images/final/img3.png"\>
     </div>
   </div>
 
@@ -77,13 +77,13 @@
         Post Mortem
       </p>
       <p class="evg-paragraph h5 text-left">
-        
+        Adding multiplayer to my platformer was quite challenging, and while I was ultimately successful, the final product is not as polished as I would have liked. Starting with my implementation of a platformer from earlier in the semester and adapting it to fit a client-server model shed some light on how my original design could be improved. If the different subsystems had been properly decoupled it would have been much simpler to split the client and server into separate code paths.
       </p>
       <p class="evg-paragraph h5 text-left">
-        
+        I think in future projects I will be sure to keep things like physics updates and object death/removal completely separate from the code that manages the overall state of the game. Using a component system also would have been much cleaner, as I could have simply not added the graphics, audio, etc components to game objects when running in dedicated server mode.
       </p>
       <p class="evg-paragraph h5 text-left">
-        
+        That said, I did get some valuable practical experience with network programming for games. I implemented client-side prediction and allowed a client to notice and adjust based on discrepancies between updates from the server and the client's state at the timestamp that the update represents. I also implemented a network clock synchronization algorithm that samples the round-trip-time of communication with the server to estimate the offset between the client and server clocks.
       </p>
   </div>
 
